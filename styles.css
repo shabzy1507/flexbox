@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 850px;
+  margin: 200px auto;
+  background-color: hsl(210, 46%, 95%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.details1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.details2 {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  line-height: 23px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.details {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  flex: 0 0 400px;
+  align-self: center;
+  justify-self: center;
+}
+.nm {
+  font-weight: bold;
+  color: hsl(217, 19%, 35%);
+}
+.dt {
+  color: hsl(214, 17%, 51%);
+}
+p {
+  font-size: 12px;
+}
+.it {
+  border-radius: 125px;
+  height: 45px;
+}
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+.at {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.flex-container {
+  display: flex;
+  gap: 40px;
+  background-color: #fff;
+  height: 280px;
+  position: relative;
+}
+/* share button */
+.share-btn-container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 140px;
+  right: 0;
+  /* top: 50%; */
+  /* left: ; */
+  transform: translateY(-50%);
+}
+
+.share-btn-container a i {
+  font-size: 32px;
+}
+
+.share-btn-container a {
+  margin: 8px 0;
+  transition: 500ms;
+}
+
+.share-btn-container a:hover {
+  transform: scale(1.2);
+}
+
+.share-btn-container .fa-facebook {
+  color: #3b5998;
+}
+
+.share-btn-container .fa-twitter {
+  color: #1da1f2;
+}
+
+.share-btn-container .fa-linkedin {
+  color: #0077b5;
+}
+
+.share-btn-container .fa-pinterest {
+  color: #bd081c;
+}
+
+.share-btn-container .fa-whatsapp {
+  color: #25d366;
+}
+
+/* Media Queries */
+
+@media (max-width: 550px) {
+  .content {
+    padding: 8px 32px;
+  }
+
+  .share-btn-container {
+    transform: unset;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    padding: 16px 0;
+    justify-content: center;
+  }
+
+  .share-btn-container a {
+    margin: 0 32px;
+  }
+}
